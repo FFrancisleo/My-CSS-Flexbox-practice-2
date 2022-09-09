@@ -1,0 +1,73 @@
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
+ .items {
+    /* Instead  of using a width on here, you can use the Flex-Basis ... but dont forget to remove the flex-direction on .flex-container, the you can now use justify-content👍🏾 on flex-container */
+    flex-basis: 200px;
+    height: 100px;
+    background: orangered;
+    margin: 10px;
+    /* width: 100px; */
+    color: #fff;
+    font-size: 20px;
+    /* Display-Flex must be included for justify-content and align-items to work👌 */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+
+ /* .flex-container {
+    display: flex;
+    background-color: black;
+ } */
+
+ /* JUSTIFY CONTENT -to move items within the rows*/
+
+ /* .flex-container {
+    display: flex;
+    background-color: black; */
+    /* justify-content: start; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+/* } */
+
+/* ALIGNING VERTICALLY -this helps to align items vertically beecause of the height, within the column*/
+
+.flex-container {
+    display: flex;
+    background-color: black;
+    /* height: 400px; */
+    /* align-items: center; */
+    /* align-items: end; */
+    /* align-items: start; */
+ }
+
+ /* TARGETTING INDIVIDUAL ITEMS */
+
+ /* .items:nth-of-type(3) {
+    align-self: end;
+ }
+ .items:nth-of-type(2) {
+    align-self: center;
+ }
+ .items:nth-of-type(1) {
+    align-self: start;
+ } */
+
+/* ALIGNING VERTICALLY -this helps to align items vertically beecause of the height, within the column*/
+
+.flex-container {
+    display: flex;
+    background-color: black;
+    /* height: 400px; */
+    /* flex-direction: column; */
+    align-items: center;
+    /* By addind a height to it, we can now use justify content so it sees it as a row ⬇🔽⬇ */
+    /* height: 600px; */
+    justify-content: center;
+ }
